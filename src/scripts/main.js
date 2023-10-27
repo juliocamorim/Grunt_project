@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('form-sorteador').addEventListener('submit', function() {
+    document
+    .getElementById('form-sorteador')
+    .addEventListener('submit', function(evento) {
+        evento.preventDefault();
         let numeroMaximo = document.getElementById('numero-maximo').value;
-        numeroMaximo = parseint(numeroMaximo);
+        numeroMaximo = parseInt(numeroMaximo);
 
-        let numeroAleatorio = Match.random() * numeroMaximo;
-        alert(numeroAleatorio);
-    })
-})
+        let numeroAleatorio = Math.random() * numeroMaximo;
+        numeroAleatorio = Math.floor(numeroAleatorio + 1);       
+        
+        document
+            .getElementById('numero-sorteado').innerText = numeroAleatorio;
+        document
+        .querySelector('.resultado').style.display = 'block'
+    });
+});

@@ -1,17 +1,24 @@
-@corDeFundo: #616060;
-@corDoTexto: rgb(0, 0, 0);
-@corDoBotao: rgb(3, 150, 3);
+@corDeFundo: #0e0e0e;
+@corDoTexto: rgb(240, 240, 240);
+@corDoBotao: rgb(34, 199, 1);
+@corMargin: rgb(190, 186, 186);
+@fonteDoTitulo: Agbalumo, cursive;
+@fontePrincipal: Roboto, sans-serif;
 
 
 body {
     background-color: @corDeFundo;
     color: @corDoTexto;
+    font-family: @fontePrincipal;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 h1 {
-    font-size: 1.7em;
+    font-size: 2em;
     padding-top: 19px;
     font-weight: bold;
+    font-family: @fonteDoTitulo;
 }
 
 label {
@@ -22,12 +29,13 @@ label {
 }
 
 input {
+    padding-top: 18px;
     font-size: 1em;
     max-width: 120px;
     border: none;
     background-color: transparent;
     text-align: center;
-    border-bottom: 6px solid white;
+    border-bottom: 6px solid @corMargin;
     color: @corDoTexto;
 }
 
@@ -48,4 +56,16 @@ button {
     border-radius: 10px;
     background-color: @corDoBotao;
     color: @corDoTexto;
+}
+
+.resultado{
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px solid @corMargin;
+    display: none;
+
+    span {
+        font-weight: bold;
+        display: block;
+    }
 }

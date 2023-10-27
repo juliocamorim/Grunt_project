@@ -1,11 +1,15 @@
 body {
-  background-color: #616060;
-  color: #000000;
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
 }
 h1 {
-  font-size: 1.7em;
+  font-size: 2em;
   padding-top: 19px;
   font-weight: bold;
+  font-family: Agbalumo, cursive;
 }
 label {
   padding-top: 9px;
@@ -14,13 +18,14 @@ label {
   font-size: 0.9em;
 }
 input {
+  padding-top: 18px;
   font-size: 1em;
   max-width: 120px;
   border: none;
   background-color: transparent;
   text-align: center;
-  border-bottom: 6px solid white;
-  color: #000000;
+  border-bottom: 6px solid #bebaba;
+  color: #f0f0f0;
 }
 main {
   max-width: 960px;
@@ -36,6 +41,16 @@ button {
   font-size: 0.7em;
   margin-top: 20px;
   border-radius: 10px;
-  background-color: #039603;
-  color: #000000;
+  background-color: #22c701;
+  color: #f0f0f0;
+}
+.resultado {
+  padding: 16px;
+  margin-top: 120px;
+  border: 8px solid #bebaba;
+  display: none;
+}
+.resultado span {
+  font-weight: bold;
+  display: block;
 }
